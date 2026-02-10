@@ -1,0 +1,30 @@
+VAPID Key Setup Instructions
+============================
+
+Before running the server, you must generate VAPID keys and place them in this folder.
+
+Steps:
+------
+1. Visit: https://www.attheminute.com/vapid-key-generator
+2. Click "Generate Keys"
+3. Copy the PUBLIC KEY and save it to: data/vapid_public.txt
+4. Copy the PRIVATE KEY and save it to: data/vapid_private.txt
+
+File Format:
+-----------
+Each file should contain only the key string, with no extra whitespace or newlines.
+
+Example vapid_public.txt:
+BAbcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_
+
+Example vapid_private.txt:
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN
+
+Security:
+---------
+⚠️ NEVER share your private key or commit it to version control!
+⚠️ Keep your vapid_private.txt file secure and private.
+
+Once you've created both files, you can start the server with:
+  go run .
+
