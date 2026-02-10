@@ -1,6 +1,11 @@
 # WebPush - Unified Push Notification Server
 
+<img src="https://raw.githubusercontent.com/Isske/WebPush/refs/heads/main/image.png" width="800px" height="800px"></img>
+
 A complete web push notification server with integrated dashboard, built in Go.
+
+###Note
+In order to use this in a production environment, the service worker javascript must be served over https, as it is a requirement for push notifications
 
 ## Project Structure
 
@@ -115,4 +120,5 @@ curl -X POST http://localhost:10040/send-broadcast \
 - `github.com/SherClockHolmes/webpush-go` - Web Push protocol implementation
 - `modernc.org/sqlite` - Pure Go SQLite implementation
 - Leaflet.js - Interactive maps (loaded via CDN)
+
 
